@@ -1,17 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+ <ul>
+   </ul>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+
+    return{
+      storedResources :[
+        {
+          id :'official-guide',
+          title:'Official Guid',
+          description :'vue js',
+          link :"https://vuejs.org"
+        },
+        {
+          id :'google',
+          title:'google',
+          description :'google is your friend',
+          link :"https://google.com"
+        }
+      ]
+    }
   }
 }
 </script>
