@@ -1,36 +1,24 @@
 <template>
-   <stored-resources :resources="storedResources"></stored-resources>
+   <div>
+   <the-header title="FindLink"></the-header>
+  <the-resources></the-resources>
+</div>
 </template>
 
 <script>
+//import TheHeader from './components/layouts/TheHeader.vue';
+//import storedResources from './components/learning-resource/StoreResource.vue';
+import TheHeader from './components/layouts/TheHeader.vue';
 
-import storedResources from './components/learning-resource/StoreResource.vue';
-
-
+import TheResources from './components/learning-resource/TheResources.vue';
 export default {
   components:
   {
-    storedResources
+   // storedResources,
+    TheHeader,
+    TheResources
   },
-  data(){
-
-    return{
-      storedResources :[
-        {
-          id :'official-guide',
-          title:'Official Guid',
-          description :'vue js',
-          link :"https://vuejs.org"
-        },
-        {
-          id :'google',
-          title:'google',
-          description :'google is your friend',
-          link :"https://google.com"
-        }
-      ]
-    }
-  }
+ 
 }
 </script>
 
