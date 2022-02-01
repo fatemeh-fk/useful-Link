@@ -1,5 +1,5 @@
 <template>
-    <button :type="type" :class="mode">
+    <button  :class="mode">
 
          <slot></slot>
     </button>
@@ -11,7 +11,7 @@
 
 export default {
 
-props :['type','mode']
+props :['mode']
 
 
 }
